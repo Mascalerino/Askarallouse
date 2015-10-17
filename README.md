@@ -10,7 +10,7 @@ Este proyecto está destinado como desarrollo para la clase de Tecnologías de S
 
 Solo necesitas descargar el contenido del repositorio en tu servidor web y realizar la instalación de la base de datos, usando el script que ubicado bajo database-setup/ cuando esté terminado.
 
-git clone https://github.com/ndrs92/Askarakllouse.git
+git clone https://github.com/Mascalerino/Askarakllouse.git
 
 Crear la base de datos Askarakllouse en tu servidor mysql y ejecutar:
 
