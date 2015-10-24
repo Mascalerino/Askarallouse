@@ -27,6 +27,12 @@
     	last_busqAv = id;
 	}
 	</script>
+	  <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 25px;
+  }
+  </style>
 
   </head>
   <body>
@@ -142,7 +148,7 @@
   				<li id="busqAv2" role="presentation" onclick="myFunction('busqAv2')"><a style="outline:none;" href="#">Profile</a></li>
   				<li id="busqAv3" role="presentation" onclick="myFunction('busqAv3')"><a style="outline:none;" href="#">Messages</a></li>
 			</ul>
-	    	<div class="container" style="background-color:white; width:100%; border-radius:4px; border-bottom: 1px solid #DDD; border-right: 1px solid #DDD; border-left: 1px solid #DDD;">
+	    	<div class="container" style="background-color:white; width:100%; border-radius:4px; border-bottom: 1px solid #DDD; border-right: 1px solid #DDD; border-left: 1px solid #DDD; margin-bottom: 25px;">
 		    	<!--
 		    	<h1>Lorem ipsum</h1>
 		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -170,20 +176,135 @@
 
 
 
-	<div class="page-header">
-		<h1>Preguntas</h1>
-	</div>
+	
+	<div class="container">
+  		<div class="page-header">
+			<h1>Queries</h1>
+		</div>
 	<div class="row">
-		<div class="hidden-xs col-md-2 col-lg-2" style="background-color:black;"></div>
-		<div class="col-md-8 col-lg-8" style="background-color:red;"> 
-			<div>
+		<div class="hidden-xs col-md-2 col-lg-2 sidebar">
+          <ul class="nav nav-sidebar" data-spy="affix" data-offset="350">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+        </div>
 
-			</div>
+
+
+
+		<div class="col-md-10 col-lg-10"> 
+
+
+
+   
+      <!-- START THE FEATURETTES -->
+
+       <div class="row featurette">
+        <div class="col-md-8 col-lg-8">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-2 col-lg-2">
+        </div>
+        <div class="col-md-2 col-lg-2">
+          <img class="featurette-image img-responsive center-block" src="img/new_logo.jpg" alt="image">
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-8 col-md-push-4">
+          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-2 col-md-pull-6">
+        </div>
+        <div class="col-md-2 col-md-pull-10">
+          <img class="featurette-image img-responsive center-block" src="img/new_logo.jpg" alt="image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-8">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-2">
+          <img class="featurette-image img-responsive center-block" src="img/new_logo.jpg" alt="image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-8 col-md-push-4">
+          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-2 col-md-pull-6">
+        </div>
+        <div class="col-md-2 col-md-pull-10">
+          <img class="featurette-image img-responsive center-block" src="img/new_logo.jpg" alt="image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+       <div class="row featurette">
+        <div class="col-md-8">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-2">
+          <img class="featurette-image img-responsive center-block" src="img/new_logo.jpg" alt="image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+
+
+
+
+
+
+
 		</div>	
-		<div class="hidden-xs col-md-2 col-lg-2" style="background-color:black;"></div>
+
 	</div>
 
-			<nav>
+
+
+
+
+
+
+
+	  	<nav style="text-align:center;">
   <ul class="pagination">
     <li>
       <a href="#" aria-label="Previous">
@@ -202,17 +323,19 @@
     </li>
   </ul>
 </nav>
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2014 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+  </div>
 
 
 
 
-<!--	
-	<footer class="footer_index">
-    	<div class="container">
-    		<p class="text-muted">TSW - TSW - TSW</p>
-    	</div>
-    </footer>
--->
+
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
