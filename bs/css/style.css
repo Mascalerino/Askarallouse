@@ -15,6 +15,17 @@
 #cuerpoRespuesta{
 	margin-left: -3%;
 }
+#letraRegistro{
+	
+}
+#campoRegistro{
+	width: 50%;
+	
+}
+#modalRegistro{
+	width: 85%;
+	margin-left: 8%;
+}
 
 div.jumbotron {
 	margin-top: 50px;
