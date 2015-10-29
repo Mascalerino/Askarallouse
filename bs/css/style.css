@@ -1,22 +1,30 @@
 #panelLateral{
 	margin-bottom: 17%;
 }
-#tag{
-	margin-top: -17%;
-}
 #respuesta{
 	margin-top: -1%;
 }
+#tuRespuesta{
+	margin-bottom: 5%;
+}
+#enviarRespuesta{
+	margin-top: 3%;
+}
 #numPregunta{
 	color: orange;
-	margin-top: 32%;
-	margin-left: 15%;
+	font-size: large;
 }
-#cuerpoRespuesta{
-	margin-left: -3%;
+#tag{
+	margin-top: 2%;
 }
-#letraRegistro{
-	
+#textArea{
+  width: 850px; 
+  min-width:850px; 
+  max-width:850px; 
+
+  height:100px; 
+  min-height:100px;  
+  max-height:100px;
 }
 #campoRegistro{
 	width: 50%;
