@@ -21,19 +21,34 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   <!-- http://jsfiddle.net/QEHd4/15/ -->
+<<<<<<< HEAD
 
     <script>
+=======
+  
+  <script>
+>>>>>>> origin/master
   var last_busqAv = "busqAv1"; 
   function myFunction(id) {
       document.getElementById(last_busqAv).className = "";
       document.getElementById(id).className = "active";
       last_busqAv = id;
+<<<<<<< HEAD
+=======
+  }
+  </script>
+    <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 25px;
+>>>>>>> origin/master
   }
   </script>
 
   </head>
   <body>
 
+<<<<<<< HEAD
 
     <div id="buscar" class="container-fluid" style="background-image: url('img/matrix_colors.png');background-size:cover;">
 
@@ -243,10 +258,109 @@ box-shadow: 0px 0px 2px 3px rgba(0,0,0,.7);">
   
   <div id="filtrar" class="container-fluid" >
 
+=======
+    <!-- /START CABECERA -->
+
+  <div class="container-fluid" style="background-image: url('img/matrix_colors.png');background-size:cover;"> 
+      <div>
+        <img class="img-rounded img-responsive" style="max-width:100px; margin-top: -7px; display:inline;" align="left" src="img/new_logo_prueba.png" 
+          onmouseover="this.src='img/new_logo_prueba.png';" 
+          onmouseout="this.src='img/new_logo_prueba.png';" />
+      </div>
+      <form class="navbar-form navbar-right" role="search" style="bottom:10px;">
+       <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+       </div>  
+      </form>
+    </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tags <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Windows</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Linux</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Mac</a></li>
+                    </ul>
+              </li>
+              </ul>
+
+              
+
+              <ul class="nav navbar-nav navbar-right">
+                <li><a data-toggle="modal" data-target="#reg" href="#">Registro</a></li> <!-- Formulario De Registro -->
+            
+              <div id="reg" class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          <h3 style="text-align: center">Registro</h3>
+                        </div>
+                        <div class="modal-body">
+                          <h4>Alias</h4>
+                          <input type="text" name="alias" class="form-control form-pers" placeholder="Alias" />
+                          <h4>Correo Electrónico</h4>
+                          <input type="text" name="email" class="form-control form-pers" placeholder="Correo Electrónico" />
+                          <h4>Contraseña</h4>
+                          <input type="password" name="pass" class="form-control form-pers" placeholder="Contraseña" />
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" class="btn btn-success" value="Registrarse">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+
+
+                <li class="divider-vertical"></li>
+                <li class="dropdown"> <!-- Identificacion del usuario -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Identificarse<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <div class="container" style="width: 360px;">
+                        <form class="form-signin">
+                          <h2 class="form-signin-heading" style="text-align: center">Identificación</h2>
+                          <label for="inputEmail" class="sr-only">Correo Electrónico</label>
+                          <input id="inputEmail" class="form-control" placeholder="Correo Electrónico" required="" autofocus="" type="email">
+                          <label for="inputPassword" class="sr-only">Contraseña</label>
+                          <input id="inputPassword" class="form-control" placeholder="Contraseña" required="" type="password">
+                          <div class="checkbox">
+                              <label>
+                                <input value="remember-me" type="checkbox"> ¿Recordarme?
+                              </label>
+                          </div>
+                          <button class="btn btn-lg btn-primary btn-block" type="submit">Acceder</button>
+                        </form>
+                    </div>
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+  </div>  
+
+<!-- /END CABECERA -->
+
+  
+>>>>>>> origin/master
 
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -303,7 +417,25 @@ box-shadow: 0px 0px 2px 3px rgba(0,0,0,.7);">
        <div class="row featurette">
         <div class="col-md-10 col-lg-10">
           <h5>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</h5>
+=======
+  
+  <div class="container">
+    <div class="page-header">
+      <h1>Duda con StackOverFlow</h1>
+    </div>
+  <div class="row">
+
+    <div class="hidden-xs col-md-1 col-lg-1 sidebar"></div>
+
+    <div class="col-md-9 col-lg-9">  <!-- START THE QUESTION -->
+       <div class="row">
+        <div class="col-md-8 col-lg-8">
+          <h5>I'm using a javascript rss search script as a searchable telephone/address list for work. I have it working as a Chrome popup extension on the toolbar with manifest version:1 but I can't get it to work with version:2. In version:1 the xml database file doesn't need to be named in the manifest but it seems it does in version:2 but for the life of me I can't work out where it's supposed to go. I don't want it to be uploaded to a server or anything as we just need it to work locally which it's doing fine with version:1.
+          I tried searching for a manifest file to copy but most answers reference the older manifest version e.g. Chrome Extension Manifest 'Matches'
+          I expect it's something simple that I'm missing so if someone could help it would be much appreciated.</h5>
+>>>>>>> origin/master
         </div>
+        
         <div class="col-md-2 col-lg-2"></div>
         <div class="col-md-2 col-lg-2">
           <img class="featurette-image img-responsive center-block" src="img/new_logo.jpg" alt="image">
@@ -311,29 +443,96 @@ box-shadow: 0px 0px 2px 3px rgba(0,0,0,.7);">
       </div>
 
 
+<<<<<<< HEAD
       <!-- START DIV TAG -->
       <div id="tag">
         <button type="button" class="btn btn-default">TAG</button>
       </div> 
       <!-- /END DIV TAGS -->
+=======
+      <div id="tag"><!-- START DIV TAG -->
+          <button type="button" class="btn btn-default">Chrome</button>
+          <button type="button" class="btn btn-default">Mozilla</button>
+      </div> <!-- /END DIV TAGS --> 
 
+>>>>>>> origin/master
 
       <hr class="featurette-divider">
 
 
       <!-- START DIV RESPUESTA -->
-      <div id="respuesta" class="row featurette"> 
+      <div id="respuesta" class="row"> 
        <div class="col-md-1 col-lg-1">
         <p id="numPregunta" >34</p>
        </div>
-       <div id="cuerpoRespuesta"class="col-md-9 col-lg-9">
+       <div id="cuerpoRespuesta"class="col-md-11 col-lg-11">
         <h5>
-          Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+          No he entendido nada, por favor escribe en otro idioma. I tried searching for a manifest file to copy but most answers reference the older manifest version e.g. Chrome Extension Manifest 'Matches'
+          I expect it's something simple that I'm missing so if someone could help it would be much appreciated.
+          No he entendido nada, por favor escribe en otro idioma. I tried searching for a manifest file to copy but most answers reference the older manifest version e.g. Chrome Extension Manifest 'Matches'
+          I expect it's something simple that I'm missing so if someone could help it would be much appreciated.
+          No he entendido nada, por favor escribe en otro idioma. I tried searching for a manifest file to copy but most answers reference the older manifest version e.g. Chrome Extension Manifest 'Matches'
+          I expect it's something simple that I'm missing so if someone could help it would be much appreciated.
         </h5>
        </div>
+      </div> 
+      <!-- /END DIV RESPUESTA -->
+
+      <hr class="featurette-divider">
+
+
+      <!-- START DIV RESPUESTA -->
+<<<<<<< HEAD
+      <div id="respuesta" class="row featurette"> 
+=======
+      <div id="respuesta" class="row"> 
+       <div class="col-md-1 col-lg-1">
+        <p id="numPregunta" >56</p>
+       </div>
+       <div class="col-md-11 col-lg-11">
+        <h5>
+          Calla loco
+        </h5>
+       </div>
+      </div> 
+      <!-- /END DIV RESPUESTA -->
+
+      <hr class="featurette-divider">
+
+
+      <!-- START DIV RESPUESTA -->
+      <div id="respuesta" class="row"> 
+>>>>>>> origin/master
+       <div class="col-md-1 col-lg-1">
+        <p id="numPregunta" >76</p>
+       </div>
+       <div id="cuerpoRespuesta"class="col-md-9 col-lg-9">
+        <h5>
+          Yes, I do
+        </h5>
+       </div>
+<<<<<<< HEAD
        <div>
                
       </div> <!-- /END DIV RESPUESTA -->
+=======
+      </div> 
+      <!-- /END DIV RESPUESTA -->
+
+      <hr class="featurette-divider">
+
+      <!-- START DIV TU RESPUESTA -->
+      <h4>Tu Respuesta</h4>
+      <div id="tuRespuesta">
+        <textarea class="form-control" rows="5">Manifest 'Matches'I expect it's something simple that I'm missing so if someone could help it would be much appreciated.  
+        </textarea>
+        <div id="enviarRespuesta">
+          <button type="button" class="btn btn-primary">Enviar respuesta</button>
+        </div>
+      </div>
+
+      <!-- /END DIV TU RESPUESTA -->
+>>>>>>> origin/master
 
       
 
@@ -380,8 +579,13 @@ box-shadow: 0px 0px 2px 3px rgba(0,0,0,.7);">
 
   
       <footer><!-- FOOTER -->
+<<<<<<< HEAD
         <p class="pull-right"><a href="#">Volver Arriba</a></p>
         <p>© 2015 ASKarallouse <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+=======
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2015 Askarallouse <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+>>>>>>> origin/master
       </footer>
 
 
@@ -410,6 +614,10 @@ box-shadow: 0px 0px 2px 3px rgba(0,0,0,.7);">
  alt+shift+2
   http://www.w3schools.com/js/default.asp
   http://bootsnipp.com/buttons
+<<<<<<< HEAD
 http://livedemo00.template-help.com/wt_bootstrap_free_sample/index.html
 https://getbootstrap.com/examples/carousel/
+=======
+
+>>>>>>> origin/master
 -->
