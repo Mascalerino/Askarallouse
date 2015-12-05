@@ -27,8 +27,8 @@ App::uses('Controller', 'Controller');
  * Add your application-wide methods in the class below, your controllers
  * will inherit them.
  *
- * @package		app.Controller
- * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
+ * @package     app.Controller
+ * @link        http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
 
@@ -38,25 +38,33 @@ class AppController extends Controller {
 		'Form'
     );
 
-	public $components = array(
-		'DebugKit.Toolbar' => array('panels' => array('log' => false, 'variables' => false), 'history' => 10),
-		'Flash',
+    public $components = array(
+        'Flash',
+        'Session',
+        'Paginator',
         'Auth' => array(
-            'authorize' => array(
-                'Actions' => array(
-                    'actionPath' => 'controllers',
-                    'userModel' => 'Usuario',                    
-                    'fields' => array('username' => 'alias', 'password' => 'password')
-                )
+            'loginRedirect' => array(
+                'controller' => 'posts',
+                'action' => 'index'
             ),
+            'logoutRedirect' => array(
+                'controller' => 'posts',
+                'action' => 'index'
+            ),
+            'loginAction' => array("controller"=>"posts", "action"=>"index"),
+                
             'authenticate' => array(
                 'Form' => array(
-                    'userModel' => 'Usuario',                    
-                    'fields' => array('username' => 'alias', 'password' => 'password'),
                     'passwordHasher' => 'Blowfish'
                 )
-            )
+            ),
         )
-	);
-	
+    );
+    
+    public function beforeFilter() {
+        $this->Auth->allow('login', 'logout');
+        $this->set('current_user', $this->Auth->user());
+    }
+
+
 }

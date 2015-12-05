@@ -20,30 +20,78 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <!DOCTYPE html>
 <html>
 <head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $this->fetch('title'); ?>
-	</title>
-	<?php
-		echo $this->Html->meta('icon');
+    <?php echo $this->Html->charset(); ?>
+    <title>
+        <?php echo $cakeDescription ?>:
+        <?php echo $this->fetch('title'); ?>
+    </title>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php
+    echo $this->Html->meta('icon');
 
-		echo $this->Html->css(array('bootstrap.css', 'carousel.css', 'style.css'));
-		echo $this->Html->script(array('jquery-2.1.4.js', 'bootstrap.js'));
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
-	?>
+    echo $this->Html->css(array('bootstrap.css', 'style.css'));
+    echo $this->Html->script(array('jquery-2.1.4.js', 'bootstrap.js'));
+
+
+    if (!isset($current_user)) {
+        echo $this->Html->css(array('carousel.css'));
+
+    }
+
+
+    echo $this->Html->css('http://fonts.googleapis.com/css?family=Alegreya');
+    echo $this->Html->css('http://fonts.googleapis.com/css?family=Orbitron:400');
+
+    echo $this->fetch('meta');
+    echo $this->fetch('css');
+    echo $this->fetch('script');
+    ?>
 </head>
 <body>
-	<div id="container">
 
-		<div id="content">
-			<?php echo $this->Flash->render(); ?>
+<?php echo $this->element('header'); ?>
 
-			<?php echo $this->fetch('content'); ?>
-		</div>
 
-	</div>
+<div id="container">
+    <div id="content">
+    <?php
+    if (isset($current_user)) {
+        echo $this->element('navbar-2');
+
+    } else {
+        echo $this->element('navbar-1');
+    }
+    ?>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <?php if (isset($current_user)) {                
+                    echo $this->element('sidebar'); 
+                    }
+                ?>
+                <?php echo $this->Flash->render(); ?>
+                <?php echo $this->fetch('content'); ?>
+            </div>
+        </div>
+
+
+    </div>
+    <!--<div id="footer">
+        <?php /*echo $this->Html->link(
+            $this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
+            'http://www.cakephp.org/',
+            array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
+        );*/
+        ?>
+        <p>
+            <?php //echo $cakeVersion; ?>
+        </p>
+    </div>-->
+</div>
+<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>
