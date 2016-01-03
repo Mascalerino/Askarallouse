@@ -52,7 +52,7 @@
                 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                   <?php 
                     if($post['Post']['user_id'] == $current_user['id']) { 
-                      echo $this->Form->postLink('Eliminar', array('controller' => 'posts', 'action' => 'delete', $post['Post']['id']), array('class' => 'btn btn-danger', 'escape' => false), ('¿Está seguro de querer eliminar la pregunta?'));
+                      echo $this->Form->postLink(__('Eliminar'), array('controller' => 'posts', 'action' => 'delete', $post['Post']['id']), array('class' => 'btn btn-danger', 'escape' => false), __('¿Está seguro de querer eliminar la pregunta?'));
                     }
                   ?>
                 </div>
@@ -77,12 +77,12 @@
                   echo $this->Form->hidden('initDate', array('value' => date('Y-m-d H:i:s')));
                 ?>
                 <div class="form-group">
-                  <label for="email">Respuesta:</label>
+                  <label for="email"><?php __('Respuesta:')?></label>
                   <?php echo $this->Form->textarea('content', array('class' => 'form-control', 'rows' => '9')); ?>
                 </div>  
-                <button type="button" class="btn btn-default" onclick="hideAnswer('res')">Cerrar</button>
+                <button type="button" class="btn btn-default" onclick="hideAnswer('res')"><?php __('Cerrar')?></button>
                 <?php 
-                  echo $this->Form->submit('Enviar', array('div' => false, 'class' => 'btn btn-success')); 
+                  echo $this->Form->submit(__('Enviar'), array('div' => false, 'class' => 'btn btn-success')); 
                   echo $this->Form->end(); 
                 ?>
               </div>

@@ -9,7 +9,7 @@
             <div class="input-group">
               <!--<input type="text" class="form-control" placeholder="Buscar...">-->
               <?php 
-                echo $this->Form->input('search', array('class' => 'form-control', 'placeholder' => 'Buscar...', 'div' => false, 'type' => 'text', 'label' => false));
+                echo $this->Form->input('search', array('class' => 'form-control', 'placeholder' => __('Buscar...'), 'div' => false, 'type' => 'text', 'label' => false));
               ?>
               <span class="input-group-btn">
                 <!--<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>-->

@@ -37,7 +37,7 @@
 							<ul class="dropdown-menu" role="menu">
 								<li>
 									<?php 
-										echo $this->Form->postLink('Eliminar', array('controller' => 'posts', 'action' => 'delete', $post['Post']['id']), array('class' => 'btn btn-danger', 'escape' => false), ('¿Está seguro de querer eliminar la pregunta?'));
+										echo $this->Form->postLink(__('Eliminar'), array('controller' => 'posts', 'action' => 'delete', $post['Post']['id']), array('class' => 'btn btn-danger', 'escape' => false), __('¿Está seguro de querer eliminar la pregunta?'));
 					                ?>
 								</li>
 								<li>									
@@ -80,7 +80,7 @@
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal"><?php __('Cerrar') ?></button>
                 <?php 
-                echo $this->Form->submit('Guardar cambios', array('div' => false, 'class' => 'btn btn-warning')); 
+                echo $this->Form->submit(__('Guardar cambios'), array('div' => false, 'class' => 'btn btn-warning')); 
                 echo $this->Form->end(); 
                 ?>
               </div>

@@ -68,7 +68,7 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal"><?php __('Cerrar') ?></button>
                 <!--<button type="button" class="btn btn-primary">Enviar</button>-->
                 <?php 
-                echo $this->Form->submit('Enviar', array('div' => false, 'class' => 'btn btn-success')); 
+                echo $this->Form->submit(__('Enviar'), array('div' => false, 'class' => 'btn btn-success')); 
                 echo $this->Form->end(); 
                 ?>
               </div>

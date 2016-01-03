@@ -42,7 +42,7 @@
                             </label>
                           </div>
                           <!--<button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>-->
-                          <?php echo $this->Form->submit('Entrar', array('class' => 'btn btn-lg btn-primary btn-block')); ?>
+                          <?php echo $this->Form->submit(__('Entrar'), array('class' => 'btn btn-lg btn-primary btn-block')); ?>
                         <!--</form>-->
                         <?php echo $this->Form->end(); ?>
                       </div>
@@ -70,8 +70,8 @@
         <div class="item active item-1">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Sobre nosotros</h1>
-              <p>ASKarallouse es una comunidad de usuarios de TSW, como tú, para ayudarse mutuamente.</p>
+              <h1><?php __('Sobre nosotros')?></h1>
+              <p><?php __('ASKarallouse es una comunidad de usuarios de TSW, como tú, para ayudarse mutuamente.')?></p>
               <a href="#about" class="btn btn-circle page-scroll">
               </a>
             </div>
@@ -80,8 +80,8 @@
         <div class="item item-2">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Comunidad ASKarallouse</h1>
-              <p>Pregunta y responde cualquier duda.</p>
+              <h1><?php __('Comunidad ASKarallouse')?></h1>
+              <p><?php __('Pregunta y responde cualquier duda.')?></p>
               <a href="#about" class="btn btn-circle page-scroll">
               </a>
             </div>
@@ -90,9 +90,9 @@
         <div class="item item-3">
           <div class="container">
             <div class="carousel-caption">
-              <h1>¿A qué esperas?</h1>
-              <p>Únete y comienza a preguntar.</p>
-              <a class="btn btn-primary" data-toggle="modal" data-target="#reg">Regístrate</a>
+              <h1><?php __('¿A qué esperas?')?></h1>
+              <p><?php __('Únete y comienza a preguntar.')?></p>
+              <a class="btn btn-primary" data-toggle="modal" data-target="#reg"><?php __('Regístrate')?></a>
               <a href="#about" class="btn btn-circle page-scroll">
               </a>
             </div>
