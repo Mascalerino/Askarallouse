@@ -20,7 +20,7 @@
                 <li><a href="#"><?php __('TAGS') ?></a></li>                                
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a data-toggle="modal" data-target="#reg" href="#"><?php __('Registro') ?></a></li>
+                <li><a data-toggle="modal" data-target="#reg" href="#"><?php __('Registro')?></a></li>
                 <li class="divider-vertical"></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php __('Login') ?> <span class="caret"></span></a>
