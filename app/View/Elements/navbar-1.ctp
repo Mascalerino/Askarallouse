@@ -20,7 +20,6 @@
                 <li><a href="#"><?php echo __('TAGS') ?></a></li>                                
               </ul>
               <ul class="nav navbar-nav navbar-right">
-<<<<<<< HEAD
                 <li>
                   <?php 
                   if($this->Session->read("Config.language")=='esp'){
@@ -38,9 +37,7 @@
                 </li>
                 
                 <li><a data-toggle="modal" data-target="#reg" href="#"><?php echo __('Registro') ?></a></li>
-=======
                 <li><a data-toggle="modal" data-target="#reg" href="#"><?php __('Registro')?></a></li>
->>>>>>> origin/master
                 <li class="divider-vertical"></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo __('Conectarse') ?> <span class="caret"></span></a>
