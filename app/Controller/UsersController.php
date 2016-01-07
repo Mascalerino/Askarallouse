@@ -14,7 +14,7 @@
 				if($this->Auth->login()) {
 					return $this->redirect($this->Auth->redirectUrl());
 				}
-				$this->Flash->error('¡Usuario y/o contraseña incorrectos!');
+				$this->Flash->error(__('¡Usuario y/o contraseña incorrectos!'));
 			}
 			$this->redirect($this->referer());
 
@@ -22,7 +22,7 @@
 
 		public function logout() {
 			$this->Session->destroy();
-			$this->Flash->warning('Se ha cerrado la sesión.');		
+			$this->Flash->warning(__('Se ha cerrado la sesión.'));		
 			return $this->redirect($this->Auth->logout());
 		}
 
@@ -30,10 +30,10 @@
 			if($this->request->is('post')) {
 				$this->User->create();
 				if($this->User->save($this->request->data)) {
-					$this->Flash->success('EL usuario ha sido creado.');
+					$this->Flash->success(__('El usuario ha sido creado.'));
 					$this->redirect($this->referer());		
 				}
-				$this->Flash->error('EL usuario no se ha podido crear.');	
+				$this->Flash->error(__('El usuario no se ha podido crear.'));	
 				$this->redirect($this->referer());			
 			}
 		}

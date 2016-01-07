@@ -1,0 +1,314 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: /Controller/PostsController.php:19
+#: /Controller/ResponsesController.php:25;39
+msgid "Datos erróneos"
+msgstr ""
+
+#: /Controller/PostsController.php:24
+msgid "El post no existe"
+msgstr ""
+
+#: /Controller/PostsController.php:40
+msgid "La pregunta ha sido creada."
+msgstr ""
+
+#: /Controller/PostsController.php:43
+msgid "La pregunta no se ha creado correctamente."
+msgstr ""
+
+#: /Controller/PostsController.php:50;55
+msgid "Invalid post"
+msgstr ""
+
+#: /Controller/PostsController.php:62
+msgid "La pregunta ha sido modificada correctamente"
+msgstr ""
+
+#: /Controller/PostsController.php:65
+msgid "La pregunta no se ha modificado correctamente"
+msgstr ""
+
+#: /Controller/PostsController.php:80
+msgid "La pregunta se ha eliminado correctamente."
+msgstr ""
+
+#: /Controller/PostsController.php:82
+msgid "La pregunta no se ha eliminado correctamente."
+msgstr ""
+
+#: /Controller/PostsController.php:85
+msgid "El usuario no esta autorizado para eliminar esta pregunta."
+msgstr ""
+
+#: /Controller/ResponsesController.php:15
+msgid "La respuesta ha sido creada correctamente."
+msgstr ""
+
+#: /Controller/ResponsesController.php:18
+msgid "La respuesta no se ha creado correctamente."
+msgstr ""
+
+#: /Controller/ResponsesController.php:30;43
+msgid "Gracias por tu voto."
+msgstr ""
+
+#: /Controller/ResponsesController.php:55
+msgid "Ya ha votado esta respuesta."
+msgstr ""
+
+#: /Controller/UsersController.php:17
+msgid "¡Usuario y/o contraseña incorrectos!"
+msgstr ""
+
+#: /Controller/UsersController.php:25
+msgid "Se ha cerrado la sesión."
+msgstr ""
+
+#: /Controller/UsersController.php:33
+msgid "El usuario ha sido creado."
+msgstr ""
+
+#: /Controller/UsersController.php:36
+msgid "El usuario no se ha podido crear."
+msgstr ""
+
+#: /View/Elements/header.ctp:12
+msgid "Buscar..."
+msgstr ""
+
+#: /View/Elements/leftSidebar.ctp:12
+msgid "Conectado"
+msgstr ""
+
+#: /View/Elements/leftSidebar.ctp:16
+msgid "Perfil"
+msgstr ""
+
+#: /View/Elements/leftSidebar.ctp:17
+msgid "Buscar"
+msgstr ""
+
+#: /View/Elements/leftSidebar.ctp:18
+msgid "Filtrar"
+msgstr ""
+
+#: /View/Elements/leftSidebar.ctp:20
+msgid "Mensajes"
+msgstr ""
+
+#: /View/Elements/leftSidebar.ctp:24
+msgid "Preguntas"
+msgstr ""
+
+#: /View/Elements/leftSidebar.ctp:26
+msgid "Favoritas"
+msgstr ""
+
+#: /View/Elements/leftSidebar.ctp:27
+msgid "Mis Preguntas"
+msgstr ""
+
+#: /View/Elements/leftSidebar.ctp:28
+msgid "Mis Respuestas"
+msgstr ""
+
+#: /View/Elements/leftSidebar.ctp:40
+msgid "pregunta"
+msgstr ""
+
+#: /View/Elements/leftSidebar.ctp:64
+msgid "Descripción:"
+msgstr ""
+
+#: /View/Elements/leftSidebar.ctp:71
+#: /View/Elements/navbar-1.ctp:149
+#: /View/Elements/rightSidebar.ctp:62
+#: /View/Posts/index.ctp:82
+#: /View/Posts/search.ctp:68
+#: /View/Posts/view.ctp:84
+msgid "Cerrar"
+msgstr ""
+
+#: /View/Elements/leftSidebar.ctp:74
+#: /View/Elements/rightSidebar.ctp:65
+#: /View/Posts/view.ctp:86
+msgid "Enviar"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:20
+#: /View/Elements/navbar-2.ctp:20
+msgid "TAGS"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:23;127
+msgid "Registro"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:26
+msgid "Conectarse"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:32
+msgid "Identificarse"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:33;35
+msgid "Usuario"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:36;38;141
+msgid "Contraseña"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:41
+msgid "Recuerdame"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:45
+msgid "Entrar"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:73
+msgid "Sobre nosotros"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:74
+msgid "ASKarallouse es una comunidad de usuarios de TSW, como tú, para ayudarse mutuamente."
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:83
+msgid "Comunidad ASKarallouse"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:84
+msgid "Pregunta y responde cualquier duda."
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:93
+msgid "¿A qué esperas?"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:94
+msgid "Únete y comienza a preguntar."
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:95
+msgid "Registrate"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:104
+msgid "Antes"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:108
+msgid "Despues"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:133
+msgid "Alias Usuario"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:136
+msgid "Nombre"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:137
+msgid "Apellidos"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:138
+msgid "Correo Electrónico"
+msgstr ""
+
+#: /View/Elements/navbar-1.ctp:146
+msgid "Registrarse"
+msgstr ""
+
+#: /View/Elements/navbar-2.ctp:31
+msgid "Desconectarse"
+msgstr ""
+
+#: /View/Elements/rightSidebar.ctp:4
+msgid "Info"
+msgstr ""
+
+#: /View/Elements/rightSidebar.ctp:7
+msgid "Usuario Registrados"
+msgstr ""
+
+#: /View/Elements/rightSidebar.ctp:8
+msgid "Usuarios online"
+msgstr ""
+
+#: /View/Elements/rightSidebar.ctp:11
+msgid "Usuarios nuevos"
+msgstr ""
+
+#: /View/Elements/rightSidebar.ctp:16
+msgid "Preguntas Calientes"
+msgstr ""
+
+#: /View/Elements/rightSidebar.ctp:31
+#: /View/Posts/index.ctp:66
+#: /View/Posts/search.ctp:53
+msgid "Pregunta"
+msgstr ""
+
+#: /View/Elements/rightSidebar.ctp:55
+msgid "Descripción"
+msgstr ""
+
+#: /View/Posts/index.ctp:40
+#: /View/Posts/search.ctp:30
+#: /View/Posts/view.ctp:55
+msgid "Eliminar"
+msgstr ""
+
+#: /View/Posts/index.ctp:40
+#: /View/Posts/search.ctp:30
+#: /View/Posts/view.ctp:55
+msgid "¿Está seguro de querer eliminar la pregunta?"
+msgstr ""
+
+#: /View/Posts/index.ctp:44
+#: /View/Posts/search.ctp:34
+msgid "Editar"
+msgstr ""
+
+#: /View/Posts/index.ctp:56
+#: /View/Posts/view.ctp:65
+msgid "Pregunta creada hace: "
+msgstr ""
+
+#: /View/Posts/index.ctp:74
+#: /View/Posts/search.ctp:60
+msgid "Título:"
+msgstr ""
+
+#: /View/Posts/index.ctp:84
+#: /View/Posts/search.ctp:70
+msgid "Guardar cambios"
+msgstr ""
+
+#: /View/Posts/view.ctp:48
+msgid "Responder"
+msgstr ""
+
+#: /View/Posts/view.ctp:81
+msgid "Respuesta"
+msgstr ""
+

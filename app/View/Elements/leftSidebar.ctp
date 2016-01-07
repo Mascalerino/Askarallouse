@@ -8,23 +8,26 @@
           </div>
           <div class="pull-left info">
             <p><?= $current_user['username']; ?></p>
-            <a href="#"><i class="fa fa-circle text-success"></i> <?php __('Online') ?></a>
+           
+          <?php echo $this->Html->link("<i class='fa fa-circle text-success'></i> ".__('Conectado'),array(),array('escape' => false)); ?>
           </div>
         </div>
-        <ul class="nav nav-sidebar text-white">         
-          <li class="active"><a href="#perfil"><i class="glyphicon glyphicon-user"></i> <span><?php __('Perfil') ?></span></a></li>              
-          <li><a href="#buscar"><i class="glyphicon glyphicon-search"></i> <span><?php __('Buscar') ?></span></a></li>
-          <li><a href="#filtrar"><i class="glyphicon glyphicon-filter"></i> <span><?php __('Filtrar') ?></span></a></li>
-          <li>
-            <a href="#">
-            <i class="fa fa-envelope"></i> <span><?php __('Mensajes') ?></span>
-            <span class="label label-warning label-as-badge  pull-right">12</span>
-            </a>
-          </li> 
-          <li><a href="#pregunta" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-plus"></i><span> <?php __('Preguntas') ?></span></a></li>                  
-          <li class="mv-right"><a href="#"><i class="fa fa-circle-o text-red"></i> <span><?php __('Favoritas') ?></span></a></li>
-          <li class="mv-right"><a href="#"><i class="fa fa-circle-o text-orange"></i> <span><?php __('Mis Preguntas') ?></span></a></li>
-          <li class="mv-right"><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span><?php __('Mis Respuestas') ?></span></a></li>              
+        <ul class="nav nav-sidebar text-white">
+          <?php echo "<li>".$this->Html->link("<i class='glyphicon glyphicon-user'></i> ".__('Perfil'),array(),array('escape' => false))."<li>"; ?>
+          <?php echo "<li>".$this->Html->link("<i class='glyphicon glyphicon-search'></i> ".__('Buscar'),array(),array('escape' => false))."<li>"; ?> 
+          <?php echo "<li>".$this->Html->link("<i class='glyphicon glyphicon-filter'></i> ".__('Filtrar'),array(),array('escape' => false))."<li>"; ?>
+
+          <?php echo "<li>".$this->Html->link("<i class='fa fa-envelope'></i> ".__('Mensajes'),array(),array('escape' => false))."<li>"; ?>
+
+                        
+         
+          <li><a href="#pregunta" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-plus"></i><span> <?php echo __('Preguntas') ?></span></a></li>
+
+           <?php echo "<li>".$this->Html->link("<i class='fa fa-circle-o text-red'></i> ".__('Favoritas'),array(),array('escape' => false))."<li>"; ?>
+           <?php echo "<li>".$this->Html->link("<i class='fa fa-circle-o text-orange'></i> ".__('Mis Preguntas'),array(),array('escape' => false))."<li>"; ?> 
+           <?php echo "<li>".$this->Html->link("<i class='fa fa-circle-o text-aqua'></i> ".__('Mis Respuestas'),array(),array('escape' => false))."<li>"; ?> 
+
+                      
         </ul> 
       </div>
 
@@ -34,7 +37,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title txt-center" id="myModalLabel"><?php __('pregunta') ?></h3>
+                <h3 class="modal-title txt-center" id="myModalLabel"><?php echo __('pregunta') ?></h3>
               </div>
               <div class="modal-body">
                 <!--<form role="form">-->
@@ -58,14 +61,14 @@
                     <input type="text" class="form-control" id="tags">
                   </div>-->
                   <div class="form-group">
-                    <label for="email"><?php __('Descripción:') ?></label>
+                    <label for="email"><?php echo __('Descripción:') ?></label>
                     <!--<textarea placeholder="Descripción..." class="form-control txtarea-mod" id="descripcion" rows="3"></textarea>-->
                     <?php echo $this->Form->textarea('content', array('class' => 'form-control', 'rows' => '3')); ?>
                   </div>   
                 <!--</form>-->
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><?php __('Cerrar') ?></button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo __('Cerrar') ?></button>
                 <!--<button type="button" class="btn btn-primary">Enviar</button>-->
                 <?php 
                 echo $this->Form->submit(__('Enviar'), array('div' => false, 'class' => 'btn btn-success')); 

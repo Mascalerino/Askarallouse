@@ -17,9 +17,24 @@
                 <li>
                 <?php echo $this->Html->link("<span class='glyphicon glyphicon-home'></span>", array('controller' => 'posts', 'action' => 'index'), array('escape' => false)); ?>
                 </li>
-                <li><a href="#"><?php__('TAGS')?></a></li>                                
+                <li><a href="#"><?php echo __('TAGS')?></a></li>                                
               </ul>
               <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <?php 
+                  if($this->Session->read("Config.language")=='esp'){
+                    $lang='eng';
+                    echo $this->Html->image("eng.png", array(
+                    "alt" => "ENG",
+                    'url' => array('controller' => 'Languages', 'action' => 'changeLanguages',$lang))); 
+                  } else{
+                      $lang='esp';
+                    echo $this->Html->image("esp.png", array(
+                    "alt" => "ESP",
+                    'url' => array('controller' => 'Languages', 'action' => 'changeLanguages',$lang)));
+                  }
+                  ?>
+                </li>
 
                 <li class="divider-vertical"></li>
                 <li class="dropdown">

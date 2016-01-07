@@ -13,117 +13,275 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: /leftSidebar.ctp:11
-msgid "Online"
+#: /Controller/PostsController.php:19
+#: /Controller/ResponsesController.php:25;39
+msgid "Datos erróneos"
+msgstr "Wrong data"
+
+#: /Controller/PostsController.php:24
+msgid "El post no existe"
+msgstr "The post does not exist"
+
+#: /Controller/PostsController.php:40
+msgid "La pregunta ha sido creada."
 msgstr ""
 
-#: /leftSidebar.ctp:15
+#: /Controller/PostsController.php:43
+msgid "La pregunta no se ha creado correctamente."
+msgstr "The question has been created."
+
+#: /Controller/PostsController.php:50;55
+msgid "Invalid post"
+msgstr "Invalid post"
+
+#: /Controller/PostsController.php:62
+msgid "La pregunta ha sido modificada correctamente"
+msgstr "The question has been changed successfully"
+
+#: /Controller/PostsController.php:65
+msgid "La pregunta no se ha modificado correctamente"
+msgstr "The question has not changed correctly"
+
+#: /Controller/PostsController.php:80
+msgid "La pregunta se ha eliminado correctamente."
+msgstr "The question was successfully removed."
+
+#: /Controller/PostsController.php:82
+msgid "La pregunta no se ha eliminado correctamente."
+msgstr "The question is not properly removed."
+
+#: /Controller/PostsController.php:85
+msgid "El usuario no esta autorizado para eliminar esta pregunta."
+msgstr "The user is not authorized to remove this question."
+
+#: /Controller/ResponsesController.php:15
+msgid "La respuesta ha sido creada correctamente."
+msgstr "The response has been created correctly."
+
+#: /Controller/ResponsesController.php:18
+msgid "La respuesta no se ha creado correctamente."
+msgstr "The answer is not created correctly."
+
+#: /Controller/ResponsesController.php:30;43
+msgid "Gracias por tu voto."
+msgstr "Thanks for your vote."
+
+#: /Controller/ResponsesController.php:55
+msgid "Ya ha votado esta respuesta."
+msgstr "You have already voted this answer."
+
+#: /Controller/UsersController.php:17
+msgid "¡Usuario y/o contraseña incorrectos!"
+msgstr "User and/or password!"
+
+#: /Controller/UsersController.php:25
+msgid "Se ha cerrado la sesión."
+msgstr "It has been logged."
+
+#: /Controller/UsersController.php:33
+msgid "El usuario ha sido creado."
+msgstr "The user has been created."
+
+#: /Controller/UsersController.php:36
+msgid "El usuario no se ha podido crear."
+msgstr "The user could not be created."
+
+#: /Elements/header.ctp:12
+msgid "Buscar..."
+msgstr "Search..."
+
+#: /Elements/leftSidebar.ctp:12
+msgid "Conectado"
+msgstr "Online"
+
+#: /Elements/leftSidebar.ctp:16
 msgid "Perfil"
 msgstr "Profile"
 
-#: /leftSidebar.ctp:16
+#: /Elements/leftSidebar.ctp:17
 msgid "Buscar"
-msgstr "Find"
+msgstr "Search"
 
-#: /leftSidebar.ctp:17
+#: /Elements/leftSidebar.ctp:18
 msgid "Filtrar"
-msgstr ""
+msgstr "Filter"
 
-#: /leftSidebar.ctp:20
+#: /Elements/leftSidebar.ctp:20
 msgid "Mensajes"
 msgstr "Messages"
 
-#: /leftSidebar.ctp:24
+#: /Elements/leftSidebar.ctp:24
 msgid "Preguntas"
 msgstr "Questions"
 
-#: /leftSidebar.ctp:25
+#: /Elements/leftSidebar.ctp:26
 msgid "Favoritas"
-msgstr "Favorites"
+msgstr "Favourites"
 
-#: /leftSidebar.ctp:26
+#: /Elements/leftSidebar.ctp:27
 msgid "Mis Preguntas"
 msgstr "My Questions"
 
-#: /leftSidebar.ctp:27
+#: /Elements/leftSidebar.ctp:28
 msgid "Mis Respuestas"
 msgstr "My Answers"
 
-#: /leftSidebar.ctp:37
+#: /Elements/leftSidebar.ctp:40
 msgid "pregunta"
-msgstr "question"
+msgstr "ask"
 
-#: /leftSidebar.ctp:61
-#: /rightSidebar.ctp:55
+#: /Elements/leftSidebar.ctp:64
 msgid "Descripción:"
-msgstr "Description:"
+msgstr "Descrption:"
 
-#: /leftSidebar.ctp:68
-#: /rightSidebar.ctp:62
+#: /Elements/leftSidebar.ctp:71
+#: /Elements/rightSidebar.ctp:62
+#: /Posts/index.ctp:82
+#: /Posts/search.ctp:68
+#: /Posts/view.ctp:83
 msgid "Cerrar"
 msgstr "Close"
 
-#: /navbar-1.ctp:20
+#: /Elements/leftSidebar.ctp:74
+#: /Elements/rightSidebar.ctp:65
+#: /Posts/view.ctp:85
+msgid "Enviar"
+msgstr "Send"
+
+#: /Elements/navbar-1.ctp:20
+#: /Elements/navbar-2.ctp:20
 msgid "TAGS"
 msgstr "TAGS"
 
-#: /navbar-1.ctp:23
+#: /Elements/navbar-1.ctp:23
 msgid "Registro"
 msgstr "Register"
 
-#: /navbar-1.ctp:26
-msgid "Login"
-msgstr ""
+#: /Elements/navbar-1.ctp:26
+msgid "Conectarse"
+msgstr "Conect"
 
-#: /navbar-1.ctp:32
+#: /Elements/navbar-1.ctp:32
 msgid "Identificarse"
-msgstr "Login"
+msgstr "Log In"
 
-#: /navbar-1.ctp:33;35
+#: /Elements/navbar-1.ctp:33;35
 msgid "Usuario"
 msgstr "User"
 
-#: /navbar-1.ctp:36;38
+#: /Elements/navbar-1.ctp:36;38
 msgid "Contraseña"
 msgstr "Password"
 
-#: /navbar-1.ctp:41
+#: /Elements/navbar-1.ctp:41
 msgid "Recuerdame"
 msgstr "Remember me"
 
-#: /navbar-1.ctp:104
+#: /Elements/navbar-1.ctp:45
+msgid "Entrar"
+msgstr "Log In"
+
+#: /Elements/navbar-1.ctp:73
+msgid "Sobre nosotros"
+msgstr "About"
+
+#: /Elements/navbar-1.ctp:74
+msgid "ASKarallouse es una comunidad de usuarios de TSW, como tú, para ayudarse mutuamente."
+msgstr "ASKarallouse is a community of users TSW , like you, to help each other ."
+
+#: /Elements/navbar-1.ctp:83
+msgid "Comunidad ASKarallouse"
+msgstr "Community ASKarallouse"
+
+#: /Elements/navbar-1.ctp:84
+msgid "Pregunta y responde cualquier duda."
+msgstr "Question and answer any questions."
+
+#: /Elements/navbar-1.ctp:93
+msgid "¿A qué esperas?"
+msgstr "What are you waiting for?"
+
+#: /Elements/navbar-1.ctp:94
+msgid "Únete y comienza a preguntar."
+msgstr "Join and start asking."
+
+#: /Elements/navbar-1.ctp:95
+msgid "Registrate"
+msgstr "Sign up"
+
+#: /Elements/navbar-1.ctp:104
 msgid "Antes"
 msgstr "Previous"
 
-#: /navbar-1.ctp:108
+#: /Elements/navbar-1.ctp:108
 msgid "Despues"
 msgstr "Next"
 
-#: /navbar-2.ctp:31
+#: /Elements/navbar-2.ctp:31
 msgid "Desconectarse"
 msgstr "Logout"
 
-#: /rightSidebar.ctp:4
+#: /Elements/rightSidebar.ctp:4
 msgid "Info"
 msgstr "Info"
 
-#: /rightSidebar.ctp:7
+#: /Elements/rightSidebar.ctp:7
 msgid "Usuario Registrados"
 msgstr "Register Users"
 
-#: /rightSidebar.ctp:8
+#: /Elements/rightSidebar.ctp:8
 msgid "Usuarios online"
 msgstr "Online Users"
 
-#: /rightSidebar.ctp:11
+#: /Elements/rightSidebar.ctp:11
 msgid "Usuarios nuevos"
 msgstr "New Users"
 
-#: /rightSidebar.ctp:16
+#: /Elements/rightSidebar.ctp:16
 msgid "Preguntas Calientes"
 msgstr "Hot Questions"
 
-#: /rightSidebar.ctp:31
+#: /Elements/rightSidebar.ctp:31
+#: /Posts/index.ctp:66
+#: /Posts/search.ctp:53
 msgid "Pregunta"
-msgstr "Question"
+msgstr "Ask"
 
+#: /Elements/rightSidebar.ctp:55
+msgid "Descripción"
+msgstr "Description"
+
+#: /Posts/index.ctp:40
+#: /Posts/search.ctp:30
+#: /Posts/view.ctp:55
+msgid "Eliminar"
+msgstr "Delete"
+
+#: /Posts/index.ctp:40
+#: /Posts/search.ctp:30
+#: /Posts/view.ctp:55
+msgid "¿Está seguro de querer eliminar la pregunta?"
+msgstr "Are you sure you want to delete the question?"
+
+#: /Posts/index.ctp:44
+#: /Posts/search.ctp:34
+msgid "Editar"
+msgstr "Edit"
+
+#: /Posts/index.ctp:56
+msgid "Pregunta creada hace: "
+msgstr "Asked created ago: "
+
+#: /Posts/index.ctp:74
+#: /Posts/search.ctp:60
+msgid "Título:"
+msgstr "Title:"
+
+#: /Posts/index.ctp:84
+#: /Posts/search.ctp:70
+msgid "Guardar cambios"
+msgstr "Save Changes"
+
+#: /Posts/view.ctp:80
+msgid "Respuesta"
+msgstr "Answer"

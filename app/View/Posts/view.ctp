@@ -45,7 +45,7 @@
                 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                   <div class="answer">
                   <?php if(isset($current_user)) { ?>
-                    <input type="button" class="btn btn-success" onclick="showAnswer('res')" value="Responder">
+                  <?php echo $this->Form->input(__('Respuesta'), array('class' => 'btn btn-success', 'type' => 'button', 'onclick'=>"showAnswer('res')",'label' => false)); ?>
                   <?php } ?>
                   </div>
                 </div>
@@ -61,7 +61,8 @@
           </div>
           <p class="margin-none"><?php  $ant = new DateTime($post['Post']['initDate']);
           $act = new DateTime();
-          $interval = $ant->diff($act); echo $interval->format('Pregunta creada hace: %a días %h horas y %i minutos ');?></p>
+          $interval = $ant->diff($act); 
+          echo __('Pregunta creada hace: ').$interval->format(' %a d %h h y %i m ');?></p>
           <hr class="h-divider marginTop-none" >
 
           <div id="res" class="row answer" style="display:none;">
@@ -77,10 +78,10 @@
                   echo $this->Form->hidden('initDate', array('value' => date('Y-m-d H:i:s')));
                 ?>
                 <div class="form-group">
-                  <label for="email"><?php __('Respuesta:')?></label>
+                  <label for="email"><?php echo __('Respuesta') ?></label>
                   <?php echo $this->Form->textarea('content', array('class' => 'form-control', 'rows' => '9')); ?>
                 </div>  
-                <button type="button" class="btn btn-default" onclick="hideAnswer('res')"><?php __('Cerrar')?></button>
+                <button type="button" class="btn btn-default" onclick="hideAnswer('res')"><?php echo __('Cerrar') ?></button>
                 <?php 
                   echo $this->Form->submit(__('Enviar'), array('div' => false, 'class' => 'btn btn-success')); 
                   echo $this->Form->end(); 

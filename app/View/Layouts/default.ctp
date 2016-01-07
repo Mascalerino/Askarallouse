@@ -32,7 +32,7 @@
         <?php
         echo $this->Html->meta('icon');
 
-        echo $this->Html->css(array('bootstrap.css', 'style.css'));
+        echo $this->Html->css(array('bootstrap.css', 'style.css', 'font-awesome.css'));
         echo $this->Html->script(array('jquery-2.1.4.js', 'bootstrap.js'));
 
         if (!isset($current_user)) {

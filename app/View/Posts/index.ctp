@@ -41,7 +41,7 @@
 					                ?>
 								</li>
 								<li>									
-									<a class="btn btn-warning" data-toggle="modal" data-target="<?php echo "#editPost".$post['Post']['id']; ?>"> <?php __('Editar') ?> </a>
+									<a class="btn btn-warning" data-toggle="modal" data-target="<?php echo "#editPost".$post['Post']['id']; ?>"> <?php echo __('Editar') ?> </a>
 								</li>
 							</ul>
 						</div>
@@ -52,7 +52,8 @@
 		</div>
 		<p class="margin-none"><?php  $ant = new DateTime($post['Post']['initDate']);
 		$act = new DateTime();
- 		$interval = $ant->diff($act); echo $interval->format('Pregunta creada hace: %a días %h horas y %i minutos ');?></p>
+ 		$interval = $ant->diff($act); 
+ 		echo __('Pregunta creada hace: ').$interval->format(' %a d %h h y %i m ');?></p>
         <hr class="h-divider marginTop-none">
 
 
@@ -62,7 +63,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title txt-center" id="myModalLabel"><?php __('Pregunta') ?></h3>
+                <h3 class="modal-title txt-center" id="myModalLabel"><?php echo __('Pregunta') ?></h3>
               </div>
               <div class="modal-body">
                 <?php 
@@ -70,15 +71,15 @@
 
                 ?>
                   <div class="form-group">                 	
-                    <?php echo $this->Form->input('title', array('class' => 'form-control' , 'label' => 'Título:')); ?>
+                    <?php echo $this->Form->input('title', array('class' => 'form-control' , 'label' => __('Título:'))); ?>
                   </div>
                   <div class="form-group">
-                    <label><?php __('Descripcion:') ?></label>
+                    <label>Descripción:</label>
                     <?php echo $this->Form->textarea('content', array('class' => 'form-control', 'rows' => '3')); ?>
                   </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><?php __('Cerrar') ?></button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo __('Cerrar') ?></button>
                 <?php 
                 echo $this->Form->submit(__('Guardar cambios'), array('div' => false, 'class' => 'btn btn-warning')); 
                 echo $this->Form->end(); 

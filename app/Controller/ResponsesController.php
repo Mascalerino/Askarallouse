@@ -12,22 +12,22 @@
 			if($this->request->is('post')) {
 				$this->Response->create();
 				if($this->Response->save($this->request->data)) {
-					$this->Flash->success('La respuesta ha sido creada correctamente.');
+					$this->Flash->success(__('La respuesta ha sido creada correctamente.'));
 					return $this->redirect($this->referer());
 				}
-				$this->Flash->warning('La respuesta no se ha creado correctamente.');				
+				$this->Flash->warning(__('La respuesta no se ha creado correctamente.'));				
 			}
 		}
 
 		public function voteResponseUp($id = null){
 
 			if(!$id) {
-				throw new NotFoundException("Datos erróneos");
+				throw new NotFoundException(__('Datos erróneos'));
 			}
 
 			if($this->isValidVote($id, $this->Session->read('Auth.User.id'))){
 				$this->Response->query("INSERT INTO responses_users (user_id, response_id, vote) VALUES ('".$this->Session->read('Auth.User.id')."', '".$id."', 1)");
-				$this->Flash->success('Gracias por tu voto.');			
+				$this->Flash->success(__('Gracias por tu voto.'));			
 			}
 
 			$this->redirect($this->referer());	
@@ -36,11 +36,11 @@
 		public function voteResponseDown($id = null){
 
 			if(!$id) {
-				throw new NotFoundException("Datos erróneos");
+				throw new NotFoundException(__('Datos erróneos'));
 			}
 			if($this->isValidVote($id, $this->Session->read('Auth.User.id'))){
 				$this->Response->query("INSERT INTO responses_users (user_id, response_id, vote) VALUES ('".$this->Session->read('Auth.User.id')."', '".$id."', 0)");
-				$this->Flash->success('Gracias por tu voto.');		
+				$this->Flash->success(__('Gracias por tu voto.'));		
 			}
 
 			$this->redirect($this->referer());
@@ -52,7 +52,7 @@
 			if($checkVote["0"]["0"]['valid']==0) {
 				return true;
 			} else {
-				$this->Flash->warning('Ya ha votado esta respuesta.');	
+				$this->Flash->warning(__('Ya ha votado esta respuesta.'));	
 				return false;
 			}
 			return $checkVote;

@@ -16,12 +16,12 @@
 
 		public function view($id = null) {
 			if(!$id) {
-				throw new NotFoundException("Datos erróneos.");
+				throw new NotFoundException(__('Datos erróneos'));
 			}			
 			$post = $this->Post->findById($id);
 
 			if(!$post) {
-				throw new NotFoundException("El post no existe");
+				throw new NotFoundException(__('El post no existe'));
 			}
 
 			$responses = $this->Post->query("SELECT users.username, P.*, 
@@ -37,32 +37,32 @@
 			if($this->request->is('post')) {
 				$this->Post->create();
 				if($this->Post->save($this->request->data)) {
-					$this->Flash->success('La pregunta ha sido creada.');
+					$this->Flash->success(__('La pregunta ha sido creada.'));
 					return $this->redirect($this->referer());
 				}
-				$this->Flash->warning('La pregunta no se ha creado correctamente.');				
+				$this->Flash->warning(__('La pregunta no se ha creado correctamente.'));				
 			}
 			
 		}
 
 		public function edit($id = null) {
 		    if (!$id) {
-		        throw new NotFoundException('Invalid post');
+		        throw new NotFoundException(__('Invalid post'));
 		    }
 
 		    $post = $this->Post->findById($id);
 		    if (!$post) {
-		        throw new NotFoundException('Invalid post');
+		        throw new NotFoundException(__('Invalid post'));
 		    }
 
 		    if ($this->request->is(array('post', 'put'))) {
 		        $this->Post->id = $id;
 		   		if($this->isValidUser($id, $this->Session->read('Auth.User.id'))) {
 			        if ($this->Post->save($this->request->data)) {
-			            $this->Flash->success('La pregunta ha sido modificada correctamente');
+			            $this->Flash->success(__('La pregunta ha sido modificada correctamente'));
 			            return $this->redirect(array('action' => 'index'));
 			        }
-			        $this->Flash->warning('La pregunta no se ha modificado correctamente');
+			        $this->Flash->warning(__('La pregunta no se ha modificado correctamente'));
 			    }
 			}
 
@@ -77,12 +77,12 @@
 		    }
 		    if($this->isValidUser($id, $this->Session->read('Auth.User.id'))) {
 			    if ($this->Post->delete($id)) {
-			        $this->Flash->success('La pregunta se ha eliminado correctamente.', ($id));
+			        $this->Flash->success(__('La pregunta se ha eliminado correctamente.'), ($id));
 			    } else {
-			        $this->Flash->warning('La pregunta no se ha eliminado correctamente.', ($id));
+			        $this->Flash->warning(__('La pregunta no se ha eliminado correctamente.'), ($id));
 			    }
 			} else {
-				$this->Flash->error('El usuario no esta autorizado para eliminar esta pregunta.', ($id));
+				$this->Flash->error(__('El usuario no esta autorizado para eliminar esta pregunta.'), ($id));
 			}
 
 		    return $this->redirect(array('action' => 'index'));
